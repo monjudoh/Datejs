@@ -7,7 +7,7 @@
  * @website: http://www.datejs.com/
  */
  
-(function () {
+(function (Date) {
     Date.Parsing = {
         Exception: function (s) {
             this.message = "Parse error at '" + s.substring(0, 10) + " ...'"; 
@@ -462,9 +462,9 @@
         _[vx[j]] = _vector(_[vx[j]]); 
     }
 	
-}());
+}(Date));
 
-(function () {
+(function (Date) {
     var $D = Date, $P = $D.prototype, $C = $D.CultureInfo;
 
     var flattenAndCompact = function (ax) { 
@@ -1113,4 +1113,4 @@
     $D.parseExact = function (s, fx) { 
         return $D.getParseFunction(fx)(s); 
     };	
-}());
+}(Date));

@@ -7,7 +7,7 @@
  * @website: http://www.datejs.com/
  */
  
-(function () {
+(function (Date) {
     var $D = Date, 
         $P = $D.prototype, 
         $C = $D.CultureInfo,
@@ -862,4 +862,4 @@
         }
         ) : this._toString();
     };
-}());    
+}(Date));    

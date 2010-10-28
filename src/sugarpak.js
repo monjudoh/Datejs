@@ -13,7 +13,7 @@
  **************************************************************
  */
  
-(function () {
+(function (Date) {
     var $D = Date, $P = $D.prototype, $C = $D.CultureInfo, $N = Number.prototype;
 
     // private
@@ -472,4 +472,4 @@
     for (var l = 0; l < nth.length; l++) {
         $P[nth[l]] = (l === 0) ? nthfn(-1) : nthfn(l);
     }
-}());
+}(Date));
